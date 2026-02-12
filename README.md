@@ -1,5 +1,3 @@
-Vou te mandar um escopo organizado, nível GitHub description mesmo — direto e profissional.
-
 🏥 recovery.com – Escopo do Projeto
 🎯 Objetivo
 
