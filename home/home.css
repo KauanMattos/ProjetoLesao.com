@@ -1,46 +1,61 @@
-@import url('https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght,YOPQ@100..900,300&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+    @import url('https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght,YOPQ@100..900,300&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
-body{
-    margin: 0;
-    padding: 0;
-    font-family: "Poppins", sans-serif;
-    background-color: rgb(244, 244, 244);
+    body{
+        margin: 0;
+        padding: 0;
+        font-family: "Poppins", sans-serif;
+        background-color: rgb(244, 244, 244);
+    }
+
+    .titulo{
+        text-align: center;
+        margin-top: 50px;
+    }
+
+    .lista{
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        max-width: 500px;
+        height: 520px;
+        margin: 0 auto;
+        margin-top: 60px;
+        background: rgb(102, 102, 102);
+        padding: 20px;
+        border-radius: 8px;
+        text-align: left;
+        font-weight: 600;
+        color: rgba(0, 0, 0, 0.759);
+        
+    }
+
+    .lista ul{
+        list-style-type: none;
+        padding: 0;
+        margin: 0;
+        gap: 50px;
+    }
+
+    .lista li{
+        margin-bottom: 20px;
+    }
+
+    .lista label{
+        display: flex;
+        align-items: center;
+        gap: 12px;
+    }
+
+    /*Personalização de Checkbox*/
+    input[type="checkbox"]{
+    accent-color: #00ff88;
+    cursor: pointer;
+    justify-content: end;
+    align-items: end;
+    transform: scale(1.2);
 }
-
-.titulo{
-    text-align: center;
-    margin-top: 50px;
-}
-
-.lista{
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-    max-width: 500px;
-    height: 600px;
-    margin: 0 auto;
-    margin-top: 60px;
-    background: rgb(102, 102, 102);
-    padding: 15px;
-    border-radius: 8px;
-    text-align: left;
-    font-weight: 600;
-    color: rgba(0, 0, 0, 0.759);
-    
-}
-
-.lista ul{
-    list-style-type: none;
-    gap: 50px;
-}
-
-.lista li{
-    margin-bottom: 20px;
-}
-
-/*Personalização de Checkbox*/
-
-input:checked + span{
-    text-decoration: line-through;
-    opacity: 0.6;
-}
+    input:checked + span{
+        text-decoration: underline red;
+        opacity: 0.6;
+        color: #00ff88;
+    }
